@@ -14,6 +14,7 @@ class LoginPage extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 69, 192, 230),
         child: Icon(Icons.add),
         onPressed: (){
+          // ignore: avoid_print
           print("floating button pressed");
         }
       ),
@@ -22,8 +23,15 @@ class LoginPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: FlutterLogo(
-              size: 100,
+            child: Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 0, 140, 255),
+                borderRadius: BorderRadius.circular(25),              
+              ),
+              child: FlutterLogo(
+                size: 100,
+              ),
             ),
           ),
           SizedBox(height: 20,),
