@@ -1,6 +1,8 @@
 # chat_app
 
-A new Flutter project.
+This is my Flutter exercise for a course on LinkedIn Learning. The hands-on exercise is building a chat app to learn the essentials in developing a Flutter app
+
+This is not an actual project. Just a hands-on exercise for myself
 
 ## Getting Started
 
