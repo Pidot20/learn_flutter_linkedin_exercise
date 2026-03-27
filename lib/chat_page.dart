@@ -19,52 +19,56 @@ class ChatPage extends StatelessWidget {
         children:[ 
           Column(
             children: [
-              Container(
-                
-                margin: EdgeInsets.all(50),
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    bottomRight: Radius.circular(20)
+              Align(
+                alignment: AlignmentGeometry.centerLeft,
+                child: Container(              
+                  margin: EdgeInsets.all(50),
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20)
+                    ),
                   ),
+                
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text("This is your message", style: TextStyle(color: Colors.white),),
+                      SizedBox(height: 20,),
+                      Image.network('https://media.tenor.com/T1zotsnaPJsAAAAe/bruh-meme.png', scale: 5,)
+                    ],
+                  ),
+                
                 ),
-              
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text("This is your message", style: TextStyle(color: Colors.white),),
-                    SizedBox(height: 20,),
-                    Image.network('https://media.tenor.com/T1zotsnaPJsAAAAe/bruh-meme.png', scale: 5,)
-                  ],
-                ),
-              
               ),
               
-              Container(
-                
-                margin: EdgeInsets.all(50),
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                    bottomRight: Radius.circular(20)
+              Align(
+                alignment: AlignmentGeometry.centerRight,
+                child: Container(             
+                  margin: EdgeInsets.all(50),
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20)
+                    ),
                   ),
+                
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text("This is your message", style: TextStyle(color: Colors.white),),
+                      SizedBox(height: 20,),
+                      Image.network('https://media.tenor.com/T1zotsnaPJsAAAAe/bruh-meme.png', scale: 5,)
+                    ],
+                  ),
+                
                 ),
-              
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text("This is your message", style: TextStyle(color: Colors.white),),
-                    SizedBox(height: 20,),
-                    Image.network('https://media.tenor.com/T1zotsnaPJsAAAAe/bruh-meme.png', scale: 5,)
-                  ],
-                ),
-              
               ),
           
               Container(
@@ -98,6 +102,7 @@ class ChatPage extends StatelessWidget {
                   borderRadius: BorderRadius.vertical(top: Radius.circular(20))
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(onPressed: (){}, icon: Icon(Icons.add, color: Colors.white,)),
                     IconButton(onPressed: (){}, icon: Icon(Icons.send, color: Colors.white,))

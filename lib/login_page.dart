@@ -6,24 +6,13 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 69, 192, 230),
-      ),
-      drawer: Drawer(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color.fromARGB(255, 69, 192, 230),
-        child: Icon(Icons.add),
-        onPressed: (){
-          // ignore: avoid_print
-          print("floating button pressed");
-        }
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Center(
-            child: Container(
+      
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 0, 140, 255),
@@ -33,16 +22,17 @@ class LoginPage extends StatelessWidget {
                 size: 100,
               ),
             ),
-          ),
-          SizedBox(height: 20,),
-          Text(
-            "Let's sign you in \n Welcome Back",
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold
+            SizedBox(height: 20,),
+            Text(
+              "Let's sign you in \n Welcome Back",
+              textAlign: TextAlign.justify,
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
 
     );
