@@ -71,6 +71,23 @@ class LoginPage extends StatelessWidget {
                 child: Text("Pidot20", style: TextStyle(fontSize: 30),)
               ),
               SizedBox(height: 10,),
+
+              GestureDetector(
+                onTap: (){
+                  print("gesture pressed");
+                },
+
+                onDoubleTap: (){
+                  print("double tap");
+                },
+                child: Text(
+                  "Gesture detector", 
+                  style: TextStyle(fontSize: 20), 
+                  textAlign: TextAlign.center,
+                )
+              ),
+
+              
           
             ],
           ),
