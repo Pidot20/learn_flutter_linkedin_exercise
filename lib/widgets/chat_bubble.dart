@@ -10,7 +10,7 @@ class ChatBubble extends StatelessWidget {
     return Align(
       alignment: alignment,
       child: Container(              
-        margin: EdgeInsets.all(50),
+        margin: EdgeInsets.all(20),
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: Colors.grey,
@@ -25,7 +25,7 @@ class ChatBubble extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(message, style: TextStyle(color: Colors.white),),
-            SizedBox(height: 20,),
+            SizedBox(height: 10,),
             Image.network('https://media.tenor.com/T1zotsnaPJsAAAAe/bruh-meme.png', scale: 5,)
           ],
         ),
