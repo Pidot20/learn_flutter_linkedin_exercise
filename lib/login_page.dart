@@ -39,6 +39,15 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.bold
                 ),
               ),
+              SizedBox(height: 20,),
+
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder()
+
+                ),
+              ),
+              SizedBox(height: 20,),
           
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
