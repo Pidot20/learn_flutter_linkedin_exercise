@@ -35,9 +35,9 @@ class ChatPage extends StatelessWidget {
                 );
               },
                
-                // ,
-                // ChatBubble(message: "wat u want", alignment: AlignmentGeometry.centerRight),
-                // ChatBubble(message: "bloody hell", alignment: AlignmentGeometry.centerLeft)
+                /*
+                ChatBubble(message: "wat u want", alignment: AlignmentGeometry.centerRight),
+                ChatBubble(message: "bloody hell", alignment: AlignmentGeometry.centerLeft)*/
               
             ),
           ),
